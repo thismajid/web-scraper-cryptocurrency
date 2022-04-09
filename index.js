@@ -1,9 +1,12 @@
 import express from "express";
-import axios from "axios";
 import cheerio from "cheerio";
 import "dotenv/config";
 
+import { getPrice } from "./getPrice.js";
+
 const app = express();
+
+getPrice();
 
 const port = process.env.PORT || 3000;
 
